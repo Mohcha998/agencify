@@ -1,13 +1,82 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .text-xxs {
+    font-size: 0.625rem;
+  }
+  .text-xxxs {
+    font-size: 0.400rem;
+  }
+
+  .arrow-icon {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+    position: relative;
+    top: -0.125rem;
+    transform-origin: center;
+  }
+  
+  .arrow-icon.open {
+    transform: rotate(225deg); 
+  }
+
+  .arrow-m-icon {
+    width: 1rem;
+    height: 1rem;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+    position: relative;
+    top: -0.125rem;
+    transform-origin: center;
+  }
+  
+  .arrow-m-icon.open {
+    transform: rotate(-45deg); 
+  }
+  .overlay-text {
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(to top, white 15%, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0)); 
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  .image-mask {
+    object-fit: cover;
+    height: 800px;
+    /* margin-left: -10px; */
+    padding-top: 20px;
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 10%, transparent 100%);
+  }
+
+  .image--m-mask {
+    object-fit: cover;
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 10%, transparent 100%);
+  }
+
+  
+
+  
+  
