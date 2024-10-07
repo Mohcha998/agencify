@@ -102,44 +102,51 @@ const Navbar = () => {
                     <span className={`arrow-icon ml-2 ${isServicesOpen ? 'open' : ''}`}></span>
                 </button>
                 {isServicesOpen && (
-                    <div className="absolute left-[-30px] mt-1 w-[250px] bg-white border border-gray-200 rounded-2xl shadow-lg z-10 mx-8">
-                        <ul className="py-2 space-y-2 px-2">
-                            <li className="flex justify-center items-center px-2 py-1 hover:bg-gray-100 transition duration-200 ease-in-out rounded-lg">
-                                <img src={apprLogo} alt="Optimisation" className="h-7 mr-2 min-w-[30px]" />
-                                <div className="min-w-[150px]">
-                                    <div className="flex items-center">
-                                        <h3 className="font-medium text-gray-900 text-xs">Optimisation</h3>
-                                        <div className="flex items-center ml-2 px-2 py-1 bg-green-100 text-green-600 text-xxxs rounded-full">
-                                            <img src={verified} alt="Icon" className="h-2 w-2 mr-1" />
-                                            <span className='font-medium'>La plus populaire</span>
-                                        </div>
-                                    </div>
-                                    <p className="text-xxs text-gray-500">Web</p>
-                                </div>
-                            </li>
-                            <li className="flex justify-center items-center px-2 py-1 hover:bg-gray-100 transition duration-200 ease-in-out rounded-lg">
-                                <img src={couchLogo} alt="Design graphique" className="h-7 mr-2 min-w-[30px]" />
-                                <div className="min-w-[150px]">
-                                    <h3 className="font-medium text-gray-900 text-xs">Design graphique</h3>
-                                    <p className="text-xxs text-gray-500">Web & print</p>
-                                </div>
-                            </li>
-                            <li className="flex justify-center items-center px-2 py-1 hover:bg-gray-100 transition duration-200 ease-in-out rounded-lg">
-                                <img src={namLogo} alt="Développement web" className="h-7 mr-2 min-w-[30px]" />
-                                <div className="min-w-[150px]">
-                                    <h3 className="font-medium text-gray-900 text-xs">Développement web</h3>
-                                    <p className="text-xxs text-gray-500">Desktop & Mobile</p>
-                                </div>
-                            </li>
-                            <li className="flex justify-center items-center px-2 py-1 hover:bg-gray-100 transition duration-200 ease-in-out rounded-lg">
-                                <img src={competeLogo} alt="Suivi & support" className="h-7 mr-2 min-w-[30px]" />
-                                <div className="min-w-[150px]">
-                                    <h3 className="font-medium text-gray-900 text-xs">Suivi & support</h3>
-                                    <p className="text-xxs text-gray-500">Dans votre projet</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                <div className="absolute left-[-30px] mt-1 w-[250px] bg-white border border-gray-200 rounded-2xl shadow-lg z-10 mx-8">
+                    <ul className="py-2 space-y-2 px-2">
+                        {/* Item 1 */}
+                        <li className="flex justify-start items-center px-2 py-1 hover:bg-gray-100 transition duration-200 ease-in-out rounded-lg">
+                        <img src={apprLogo} alt="Optimisation" className="h-7 mr-2 min-w-[30px]" />
+                        <div className="flex-1">
+                            <div className="flex items-center justify-between w-full">
+                            <h3 className="font-medium text-gray-900 text-xs">Optimisation</h3>
+                            <div className="ml-2 px-2 py-1 bg-green-100 text-green-600 text-xxxs rounded-full flex items-center justify-center">
+                                <img src={verified} alt="Icon" className="h-2 w-2 mr-1" />
+                                <span className='font-medium'>La plus populaire</span>
+                            </div>
+                            </div>
+                            <p className="text-xxs text-gray-500">Web</p>
+                        </div>
+                        </li>
+
+                        {/* Item 2 */}
+                        <li className="flex justify-start items-center px-2 py-1 hover:bg-gray-100 transition duration-200 ease-in-out rounded-lg">
+                        <img src={couchLogo} alt="Design graphique" className="h-7 mr-2 min-w-[30px]" />
+                        <div className="flex-1">
+                            <h3 className="font-medium text-gray-900 text-xs">Design graphique</h3>
+                            <p className="text-xxs text-gray-500">Web & print</p>
+                        </div>
+                        </li>
+
+                        {/* Item 3 */}
+                        <li className="flex justify-start items-center px-2 py-1 hover:bg-gray-100 transition duration-200 ease-in-out rounded-lg">
+                        <img src={namLogo} alt="Développement web" className="h-7 mr-2 min-w-[30px]" />
+                        <div className="flex-1">
+                            <h3 className="font-medium text-gray-900 text-xs">Développement web</h3>
+                            <p className="text-xxs text-gray-500">Desktop & Mobile</p>
+                        </div>
+                        </li>
+
+                        {/* Item 4 */}
+                        <li className="flex justify-start items-center px-2 py-1 hover:bg-gray-100 transition duration-200 ease-in-out rounded-lg">
+                        <img src={competeLogo} alt="Suivi & support" className="h-7 mr-2 min-w-[30px]" />
+                        <div className="flex-1">
+                            <h3 className="font-medium text-gray-900 text-xs">Suivi & support</h3>
+                            <p className="text-xxs text-gray-500">Dans votre projet</p>
+                        </div>
+                        </li>
+                    </ul>
+                </div>
                 )}
             </div>
             <a href="#" className="text-gray-900 hover:text-pink-600">A propos</a>
